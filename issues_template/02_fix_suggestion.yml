@@ -1,0 +1,40 @@
+name: 改善提案（Policy Improvement）
+description: 文言修正・前提条件の追加・政策案の改善を提案するためのテンプレート
+title: "[改善提案] "
+labels: ["改善提案", "Pull Request候補"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 対象箇所
+      description: 改善したい文書・段落を記載してください。
+      placeholder: "例：docs/04_policy_proposals.md の『転勤の事前登録制』"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 改善内容
+      description: どのように修正したいか、具体的に記載してください。
+      placeholder: "例：シングルマザーだけでなく、介護責任を持つ人も対象に含めるべき。"
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: 理由・根拠
+      description: 改善案の背景や根拠を記載してください。
+      placeholder: "例：介護離職も『家庭責任による離職』であり、構造的に同じ問題を抱えるため。"
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 想定される影響（任意）
+      description: 改善案を採用した場合のメリット・デメリットを記載してください。
+      placeholder: "例：企業側の配置転換の柔軟性が低下する可能性がある。"
+    validations:
+      required: false
