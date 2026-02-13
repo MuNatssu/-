@@ -1,0 +1,40 @@
+name: 論点の切り出し（Discussion Point）
+description: 政策案の特定箇所について、問題点・疑問点・前提条件のズレを指摘するためのテンプレート
+title: "[論点] "
+labels: ["論点", "要検討"]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: 対象箇所
+      description: どの文書・どの段落・どの前提条件についての論点かを記載してください。
+      placeholder: "例：docs/02_problem_structure.md の『外挿の失敗』の部分"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: 指摘内容
+      description: 問題だと思う点、前提条件のズレ、構造的な矛盾などを記載してください。
+      placeholder: "例：この前提は現代の家庭構造と一致していないのでは？"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・理由
+      description: なぜその点が問題だと思ったのか、根拠や背景を記載してください。
+      placeholder: "例：共働き世帯が増加しており、単身赴任前提の外挿は成立しないため。"
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 関連資料（任意）
+      description: 統計・論文・ニュースなどがあれば記載してください。
+      placeholder: "例：厚労省の就業構造基本調査 2022"
+    validations:
+      required: false
